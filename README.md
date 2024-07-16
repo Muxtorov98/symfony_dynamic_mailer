@@ -7,6 +7,7 @@ Installation
 To install the required packages, run the following commands:
 
 ```composer require symfony/mailer```
+
 ```composer require symfony/messenger```
 
 # Directory Structure
