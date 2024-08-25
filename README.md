@@ -25,7 +25,7 @@ Usage
 
 The UserSendEmailAction controller dispatches a NewUserByEmail message to the message bus.
 
-```
+```php
 <?php
 
 declare(strict_types=1);
@@ -54,7 +54,7 @@ class UserSendEmailAction extends AbstractController
 
 The NewUserByEmail class represents the email message that will be sent. It includes email, message content, subject, and SMTP configuration details.
 
-```
+```php
 <?php
 declare(strict_types=1);
 
@@ -110,7 +110,7 @@ readonly class NewUserByEmail
 
 The DynamicMailer class implements MailerInterface and sends emails using a dynamically configured transport.
 
-```
+```php
 <?php
 declare(strict_types=1);
 
@@ -141,7 +141,7 @@ class DynamicMailer implements MailerInterface
 # Message Handler
 The NewUserByEmailHandler handles the NewUserByEmail message and sends the email using the DynamicMailer.
 
-```
+```php
 <?php
 declare(strict_types=1);
 
